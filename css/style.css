@@ -712,105 +712,110 @@ body {
 	}
 }
 
-@media (min-width: 641px) and (max-width: 1199px) {
-	/* ---------HEADER--------- */
-	.header {
-		padding: 45px 35px 125px;
-		background-image: url(../images/banner-bg-tablet.jpg);
-	}
-
-	.flex-container {
-		margin-bottom: 105px;
-		width: 160px;
-	}
-
-	.menu-toggle {
-		top: 55px;
-		right: 35px;
-	}
-
-	.title {
-		font-size: 40px;
-	}
-
-	/* ---------TRENDS--------- */
-
-	.trends-title {
-		margin-top: 50px;
-		font-size: 18px;
-	}
-
-	.trends-title::after {
-		margin: 10px auto 20px;
-	}
-
+@media (max-width: 640px) and (orientation: landscape) {
 	.trend {
 		width: calc(50% - 2px);
 		height: 245px;
 	}
+}
 
-	.trend-link {
-		font-size: 17px;
-	}
+@media (min-width: 641px) and (max-width: 1199px) {
+	/* ---------HEADER--------- */
+		.header {
+			padding: 45px 35px 125px;
+			background-image: url(../images/banner-bg-tablet.jpg);
+		}
+
+		.flex-container {
+			margin-bottom: 105px;
+			width: 160px;
+		}
+
+		.menu-toggle {
+			top: 55px;
+			right: 35px;
+		}
+
+		.title {
+			font-size: 40px;
+		}
+
+	/* ---------TRENDS--------- */
+
+		.trends-title {
+			margin-top: 50px;
+			font-size: 18px;
+		}
+
+		.trends-title::after {
+			margin: 10px auto 20px;
+		}
+
+		.trend {
+			width: calc(50% - 2px);
+			height: 245px;
+		}
+
+		.trend-link {
+			font-size: 17px;
+		}
 
 	/* ---------MAIN--------- */
+		.content-area-wrapper {
+			display: flex;
+			justify-content: space-between;
+			margin: 50px 35px;
+		}
+		.posts {
+			width: 60%;
+			margin-right: 35px;
+		}
+		.post {
+			width: 100%;
+		}
+		.photo {
+			width: 100%;
+		}
+		.post:nth-child(n+2) {
+			margin-top: 40px;
+		}
 
-	.content-area-wrapper {
-		display: flex;
-		justify-content: space-between;
-		margin: 50px 35px;
-	}
+		.post-name {
+			font-size: 17px;
+		}
 
-	.posts {
-		width: 60%;
-		margin-right: 35px;
-	}
-	.post {
-		width: 100%;
-	}
-	.photo {
-		width: 100%;
-	}
-	.post:nth-child(n+2) {
-		margin-top: 40px;
-	}
+		.post-info {
+			margin: 40px 0 35px;
+		}
 
-	.post-name {
-		font-size: 17px;
-	}
+		/* ---------ASIDE--------- */
 
-	.post-info {
-		margin: 40px 0 35px;
-	}
+		.navigation {
+			width: calc(40% - 35px);
+		}
 
-	/* ---------ASIDE--------- */
+		/* ---------SHOP--------- */
 
-	.navigation {
-		width: calc(40% - 35px);
-	}
-
-	/* ---------SHOP--------- */
-
-	.shop {
-		margin: 50px 60px 30px;
-	}
-	.shop-title {
-		font-size: 18px;
-	}
-	.shop-container {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-	.shop-card {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 30px;
-		width: 45%;
-	}
-	.product-content {
-		flex-grow: 1;
-	}
+		.shop {
+			margin: 50px 60px 30px;
+		}
+		.shop-title {
+			font-size: 18px;
+		}
+		.shop-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.shop-card {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 30px;
+			width: 45%;
+		}
+		.product-content {
+			flex-grow: 1;
+		}
 
 	/* ---------FOOTER--------- */
 
@@ -818,6 +823,12 @@ body {
 		margin: 5px 35px 35px;
 	}
 }
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+	.trend {
+		width: calc(25% - 3px);
+		min-height: 320px;
+	}
 
 @media (min-width: 1200px) {
 	/* ---------POPUP--------- */
@@ -888,9 +899,8 @@ body {
 		}
 
 		.trend {
-			width: calc(25% - 4px);
+			width: calc(25% - 3px);
 			min-height: 320px;
-			padding: 15px 20px;
 		}
 
 		.trend-content {
@@ -981,3 +991,6 @@ body {
 			margin: 75px 0 45px;
 		}
 }
+
+
+
