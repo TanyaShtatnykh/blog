@@ -830,6 +830,7 @@ body {
 		min-height: 320px;
 	}
 }
+
 @media (min-width: 1200px) {
 	/* ---------POPUP--------- */
 		.popup-close {
